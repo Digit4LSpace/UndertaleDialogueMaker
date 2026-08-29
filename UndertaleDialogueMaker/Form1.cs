@@ -395,6 +395,11 @@
                 message = wingdingsResult;
             }
 
+            if (checkBoxWrap.Checked)
+            {
+                message = $"({message})";
+            }
+
             textBox1.Text = currentChar + " *" + message;
         }
 

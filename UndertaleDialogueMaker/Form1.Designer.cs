@@ -103,6 +103,7 @@
             tabPage7 = new TabPage();
             button43 = new Button();
             button42 = new Button();
+            checkBoxWrap = new CheckBox();
             tabControlAreas.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -904,11 +905,22 @@
             button42.UseVisualStyleBackColor = true;
             button42.Click += charButton_AnnoyingDog_Click;
             // 
+            // checkBoxWrap
+            // 
+            checkBoxWrap.AutoSize = true;
+            checkBoxWrap.Location = new Point(224, 183);
+            checkBoxWrap.Name = "checkBoxWrap";
+            checkBoxWrap.Size = new Size(62, 19);
+            checkBoxWrap.TabIndex = 27;
+            checkBoxWrap.Text = "(Wrap)";
+            checkBoxWrap.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(584, 561);
+            Controls.Add(checkBoxWrap);
             Controls.Add(tabControlAreas);
             Controls.Add(buttonClearAll);
             Controls.Add(checkBoxCaps);
@@ -1021,5 +1033,6 @@
         private TabPage tabPage7;
         private Button button43;
         private Button button42;
+        private CheckBox checkBoxWrap;
     }
 }
