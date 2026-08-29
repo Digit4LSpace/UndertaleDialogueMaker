@@ -925,8 +925,12 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "UndertaleDialogueMaker";
             Load += Form1_Load;
             tabControlAreas.ResumeLayout(false);
